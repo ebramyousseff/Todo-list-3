@@ -1,0 +1,95 @@
+/* Global Styles */
+body {
+    background-color: #1b1a41;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h1 {
+    color: #845afc;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Todo Wrapper */
+.TodoWrapper {
+    background-color: #2e2c5b;
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Todo Form */
+.TodoForm {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.todo-input {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #1b1a41;
+}
+
+.todo-btn {
+    background-color: #845afc;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+}
+
+.todo-btn:hover {
+    background-color: #6d47d9;
+}
+
+/* Todo Item */
+.Todo {
+    background-color: #3d3b75;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Todo p {
+    margin: 0;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.Todo p.completed {
+    text-decoration: line-through;
+    color: #999;
+}
+
+.Todo div {
+    display: flex;
+    gap: 10px;
+}
+
+.Todo .faPenToSquare, .Todo .faTrash {
+    cursor: pointer;
+    color: #845afc;
+    transition: color 0.3s ease;
+}
+
+.Todo .faPenToSquare:hover, .Todo .faTrash:hover {
+    color: #6d47d9;
+}
